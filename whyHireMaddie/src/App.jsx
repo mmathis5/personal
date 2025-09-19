@@ -150,7 +150,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Why Hire Maddie. Built with React and AI.</p>
+          <p>&copy; 2025 Why Hire Maddie. Created by Maddie Mathis.</p>
         </div>
       </footer>
     </div>
