@@ -90,10 +90,10 @@ requests for proposals. This project uses a substantial amount of AI and machine
 
 ## Personal and Fun Information 
 - Aside from computer science, Maddie is passionate about musical theater. She performed for 15 years.
-- Maddie is a big Laufey fan!
+- Maddie is a big Laufey fan and is going to a Laufey concert in October!
 - Maddie is the second oldest of 5 siblings and grew up in American Fork Utah!
 - Maddie loves cucumbers but hates pickles!
-- Maddie speaks Estonian and lived in Estonia for a year and a half!`;
+- Maddie lived in Estonia for a year and a half!`;
 
     const context = `
     You are an AI assistant helping potential employers learn about Maddie, a talented developer. 

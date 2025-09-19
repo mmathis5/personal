@@ -85,7 +85,7 @@ function App() {
     "What makes Maddie a good candidate?",
     "What projects has Maddie worked on?",
     "What is Maddie's educational background?",
-    "Tell me some fun facts about Maddie!"
+    "Learn some fun facts about Maddie!"
   ];
 
   return (
