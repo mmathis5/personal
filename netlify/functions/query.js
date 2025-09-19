@@ -1,14 +1,5 @@
 import OpenAI from 'openai';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
-// Resume data - you'll need to embed this directly or fetch it differently
-const resumeData = `# Maddie's Resume
-[Your resume content here - you'll need to copy the content from maddieResume.md]`;
-
 export const handler = async (event, context) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
@@ -27,6 +18,15 @@ export const handler = async (event, context) => {
         body: JSON.stringify({ error: 'OpenAI API key not configured' }) 
       };
     }
+
+    // Initialize OpenAI client inside the function
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+
+    // You need to add your actual resume data here
+    const resumeData = `# Maddie's Resume
+[Copy the content from your maddieResume.md file here]`;
 
     const context = `
     You are an AI assistant helping potential employers learn about Maddie, a talented developer. 
