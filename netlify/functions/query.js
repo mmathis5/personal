@@ -66,7 +66,11 @@ B.S. Computer Science | GPA: **3.93** | *Anticipated Graduation: December 2025*
 ## Projects
 
 **RFP Express**
-- Maddie developed a web application using react that stores a database of previous questions and answers that a consulting company has used in their responses to the Requests for Proposals that they have received. The database is used in conjunction with an LLM that can generate answers to new questions, and provides a confidence score for each question it answers. This is used to simplify and streamline a company's process when generating responses to new requests for proposals. 
+- Maddie developed a web application using react that stores a database of previous questions and answers that a consulting company 
+has used in their responses to the Requests for Proposals that they have received. The database is used in 
+conjunction with an LLM that can generate answers to new questions, and provides a confidence score for each 
+question it answers. This is used to simplify and streamline a company's process when generating responses to new 
+requests for proposals. This project uses a substantial amount of AI and machine learning. 
 
 **Chess Game**  
 - Developed a command-line chess application using Java for backend logic and MySQL for data persistence.  
@@ -111,7 +115,7 @@ B.S. Computer Science | GPA: **3.93** | *Anticipated Graduation: December 2025*
     -If you are asked about the projects that Maddie has worked on, 
     mention that she create the whyaskmaddie.com website, which is the application that utilizes this
     server. Use language like "this application you are using right now!". 
-    
+
     -If you are asked about Maddie's personal and fun information, only include the information 
     from the personal and fun information section of the resume. Do not include any information about computer 
     science or work experience. Do not just restate the information from the personal and fun information section,
