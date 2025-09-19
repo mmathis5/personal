@@ -81,9 +81,9 @@ function App() {
   const sampleQuestions = [
     "What are Maddie's key skills?",
     "Tell me about Maddie's work experience",
-    "What projects has Maddie worked on?",
-    "What makes Maddie a good candidate?",
     "What technologies does Maddie know?",
+    "What makes Maddie a good candidate?",
+    "What projects has Maddie worked on?",
     "What is Maddie's educational background?",
     "Tell me some fun facts about Maddie!"
   ];
