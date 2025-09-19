@@ -18,7 +18,7 @@ function App() {
     setAnswer('');
 
     try {
-      const response = await fetch('http://localhost:3001/api/query', {
+      const response = await fetch('/.netlify/functions/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,6 +44,38 @@ function App() {
   const closeModal = () => {
     setShowModal(false);
     setAnswer('');
+  };
+
+  const handleSampleQuestion = async (sampleQ) => {
+    setQuestion(sampleQ);
+    
+    // Automatically submit the question
+    setLoading(true);
+    setError('');
+    setAnswer('');
+
+    try {
+      const response = await fetch('/.netlify/functions/query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ question: sampleQ.trim() }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to get response');
+      }
+
+      const data = await response.json();
+      setAnswer(data.answer);
+      setShowModal(true);
+    } catch (err) {
+      setError('Sorry, there was an error processing your question. Please try again.');
+      console.error('Error:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const sampleQuestions = [
@@ -114,7 +146,7 @@ function App() {
                   <button
                     key={index}
                     className="question-chip"
-                    onClick={() => setQuestion(sampleQ)}
+                    onClick={() => handleSampleQuestion(sampleQ)}
                     disabled={loading}
                   >
                     {sampleQ}
