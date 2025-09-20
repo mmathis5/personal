@@ -123,6 +123,9 @@ requests for proposals. This project uses a substantial amount of AI and machine
     but rather use it to answer the question. Do not use the information from the personal and fun information section 
     to answer any other questions. 
 
+    -If the context is incomplete or you don't have the information to answer the question, it is okay to say that you don't
+    know the answer to the question. Do not try to make up an answer.
+
     : 
     
     ${question}
